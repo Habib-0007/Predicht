@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+
+:root {
+  --main: #EC5800;
+    --sub: #E9DCC9;
+}
+
+body {
+    background: var(--main);
+}
+
+section.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header h1 {
+    font-size: 1.8em;
+    padding: .4em;
+    text-align: center;
+    color: #fff;
+}
+
+section.container main {
+    color: var(--main);
+    background: #fff;
+    padding: 2em 1em;
+    border-radius: .6em;
+    width: 95%;
+    margin: 2em auto;
+    border: .2em solid var(--sub);
+}
+
+.wrapDetector .content {
+    font-weight: bolder;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.inputWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.inputWrapper input {
+    border: .1em solid var(--sub);
+    padding: .5em;
+    font-size: 1.3em;
+    border-radius: .2em;
+    caret-color: var(--main);
+    margin: 1em auto;
+    transition: all 500ms ease;
+}
+
+.inputWrapper input:hover {
+     border: .15em solid var(--main);
+}
+
+#predict {
+    display: block;
+    margin: .3em auto;
+    background: var(--main);
+    color: #fff;
+    padding: .5em 1em;
+    font-size: 1.3em;
+    border-radius: .2em;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+#predict:hover {
+    background: #fff;
+    color: var(--main);
+    border: .1em solid var(--main);
+}
+
+div.result {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.4em;
+    background: var(--main);
+    border-radius: .3em;
+    margin: 2em auto 0;
+    border: .2em solid var(--sub);
+}
+
+div.result .genderName {
+    text-align: center;
+    padding: .5em;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+div.result .probability {
+    text-align: center;
+    padding: .5em;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+footer {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > li {
+    list-style: none;
+    margin: 1.2em;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer li > a {
+    color: #fff;
+    font-size: 1.9em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+footer > li a:hover {
+    font-size: 2.3em;
+ }
