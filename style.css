@@ -14,6 +14,11 @@
     --sub: #E9DCC9;
 }
 
+::selection {
+    color: var(--main);
+    background: #fff;
+}
+
 body {
     background: var(--main);
 }
