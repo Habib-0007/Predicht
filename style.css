@@ -44,6 +44,7 @@ section.container main {
     padding: 2em 1em;
     border-radius: .6em;
     width: 95%;
+    max-width: 500px;
     margin: 2em auto;
     border: .2em solid var(--sub);
 }
